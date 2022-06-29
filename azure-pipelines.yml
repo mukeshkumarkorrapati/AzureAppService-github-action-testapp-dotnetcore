@@ -1,0 +1,10 @@
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Mukeshkumarkorrapati(caed1571-b9b7-4c5e-878a-4d723841b29c)'
+    appType: 'webApp'
+    WebAppName: 'webapp-devops'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'Webapp'
+    SlotName: 'production'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
